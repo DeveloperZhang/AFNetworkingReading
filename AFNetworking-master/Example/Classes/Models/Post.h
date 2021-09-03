@@ -28,7 +28,6 @@
 
 @property (nonatomic, assign) NSUInteger postID;
 @property (nonatomic, strong) NSString *text;
-
 @property (nonatomic, strong) User *user;
 
 - (instancetype)initWithAttributes:(NSDictionary *)attributes;

@@ -366,6 +366,7 @@
                        completionHandler:^(NSURLResponse * __unused response, id responseObject, NSError *error) {
         if (error) {
             if (failure) {
+                NSLog(@"%@", [NSThread currentThread]);
                 failure(dataTask, error);
             }
         } else {
